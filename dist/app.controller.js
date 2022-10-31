@@ -14,6 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppController = void 0;
 const common_1 = require("@nestjs/common");
+const decorators_1 = require("@nestjs/common/decorators");
 const swagger_1 = require("@nestjs/swagger");
 let AppController = class AppController {
     constructor() { }
@@ -24,7 +25,7 @@ let AppController = class AppController {
 __decorate([
     (0, swagger_1.ApiExcludeEndpoint)(),
     (0, common_1.Get)(),
-    __param(0, (0, common_1.Res)()),
+    __param(0, (0, decorators_1.Res)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)

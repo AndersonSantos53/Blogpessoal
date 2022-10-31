@@ -14,7 +14,7 @@ const swagger_1 = require("@nestjs/swagger");
 const class_validator_1 = require("class-validator");
 const typeorm_1 = require("typeorm");
 const tema_entity_1 = require("../../tema/entities/tema.entity");
-const usuario_entity_1 = require("./../../usuario/entities/usuario.entity");
+const usuario_entity_1 = require("../../usuario/entities/usuario.entity");
 let Postagem = class Postagem {
 };
 __decorate([
@@ -54,7 +54,7 @@ __decorate([
     __metadata("design:type", usuario_entity_1.Usuario)
 ], Postagem.prototype, "usuario", void 0);
 Postagem = __decorate([
-    (0, typeorm_1.Entity)({ name: "tb_postagens" })
+    (0, typeorm_1.Entity)({ name: 'tb_postagens' })
 ], Postagem);
 exports.Postagem = Postagem;
 //# sourceMappingURL=postagem.entity.js.map
